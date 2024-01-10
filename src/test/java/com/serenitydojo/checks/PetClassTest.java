@@ -8,9 +8,13 @@ import java.lang.reflect.Modifier;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PetClassTest {
-    @Test
-    public void thePetClassShouldExist() throws ClassNotFoundException {
-        assertThat(Class.forName("com.serenitydojo.Pet")).isNotNull();
+   // @Test
+  //  public void thePetClassShouldExist() throws ClassNotFoundException {
+    //    assertThat(Class.forName("com.serenitydojo.Pet")).isNotNull();
+      @Test
+      public void thePetClassNameShouldExist() throws ClassNotFoundException{
+         assertThat(Class.forName("com.serenitydojo.Pet")).isNotNull();
+
     }
 
     @Test
